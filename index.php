@@ -38,6 +38,7 @@ if($db) {
    } // end for
 
    if(isset($_SESSION['name'])){
+      $smarty->assign('posts',$tuple);
       $smarty->assign('href0',"register.php");
       $smarty->assign('href2',"logout_action.php");
       $smarty->assign('href1',"blog.php");

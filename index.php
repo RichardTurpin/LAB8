@@ -1,6 +1,7 @@
 <?php
 
 include 'db.php';
+session_start();
 require('libs/Smarty.class.php');
 $smarty = new Smarty();
 

@@ -33,6 +33,7 @@ return $MessagError;
 }
   $smarty->assign("MessagError",$MessagError);
   $smarty->assign('href0',"register.php");
+  $smarty->assign('href2',"login.php");
   $smarty->assign('Error',$_GET['Error']);	
   $smarty->display('register_template.tpl');
   

@@ -13,18 +13,17 @@ if($db)
 	$result = @ mysql_query($query,$db);
 	
 	$nrows = mysql_num_rows($result);
-	print_r($nrows);
 	if($nrows > 0) 
 	{
 		   $tupple = mysql_fetch_array($result);
 		   $_SESSION['name'] = $tupple['name'];
 		   $_SESSION['id'] = $tupple['id'];
-		 // header("Location: index.php");
+		   header("Location: index.php");
 
 
 	} else {
 		$_SESSION['erro']=-1;
-		//header("Location:login.php");
+		header("Location:login.php");
 	}
 
 }

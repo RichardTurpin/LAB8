@@ -6,6 +6,6 @@ $smarty->template_dir = 'templates';
 $smarty->compile_dir = 'templates_c';
  session_start();
  session_destroy();
-$smarty->assign('Msg',"See you back soon!");
+$smarty->assign('Msg',"See you back soon!&nbsp;");
 $smarty->display('templates/message_template.tpl');
 ?>

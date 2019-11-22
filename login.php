@@ -14,6 +14,10 @@ if($_SESSION['erro']==-1)
 	unset($_SESSION['erro']);
 }
 
+ $smarty->assign('href0',"register.php");
+ $smarty->assign('href2',"login.php");
+ $smarty->assign('MENU_2',"Register");
+ $smarty->assign('MENU_3',"Log In");
 
  $smarty->display('templates/login_template.tpl');
 
